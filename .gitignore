@@ -23,8 +23,25 @@ doc/api/
 *.js.deps
 *.js.map
 
+# Flutter dependencies
 .flutter-plugins
 .flutter-plugins-dependencies
+.metadata
+android/.gradle/
+ios/.generated/
+windows/.dart_tool/
+
+# Xcode files (if building iOS on Mac)
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+
+# Web & Windows Build Files
+web/.dart_tool/
+windows/.dart_tool/
+linux/.dart_tool/
 
 # Ignore Python Virtual Environment & Cache
 venv/
@@ -34,3 +51,13 @@ __pycache__/
 *.pyd
 .Python
 db.sqlite3
+
+# Logs & Temporary Files
+logs/
+*.log
+*.swp
+*.swo
+
+# OS-specific Files (Mac & Windows)
+.DS_Store
+Thumbs.db
